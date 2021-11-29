@@ -1,0 +1,101 @@
+@charset="UTF-8";
+/*	Configurações da página (FOLHA REFERENCIAL para TODAS as outras páginas)
+	Configurações da folha de estilo do site
+	Configurações do menu do site
+	Criado por João Pedro 11/04/2019	
+*/
+nav#menu ul {
+	list-style: none;
+	position: absolute;
+	right:250px;
+	top:0px;
+}
+nav#menu li{
+	display: inline-block;
+	margin-right: 9px;
+	margin-left: 2px;
+	padding: 2px 10px 2px 10px;
+	background-color: rgba(181,230,29,.5);
+	border-radius: 6px 6px 6px;
+}
+nav#menu li:hover {
+	transition: 0.4s;
+	background-color: rgba(181,230,29,1);
+}	
+nav#menu li a {
+	font-family: Calibri;
+	text-decoration: none;
+	color: black;
+}
+/*Configurações do corpo do site*/
+body{
+	background-color: rgba(255,255,255,1);
+}
+div#interface {
+	background-color: rgba(255,255,255,0);
+	padding: 0px 0px 0px 0px;
+    width: 900px;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -20px;
+}
+section#corpo {
+	background-color: rgba(255,255,255,1);
+	box-shadow: 0px 0px 2px rgba(0,0,0,1);
+	border-radius: 6px 6px 6px;
+	margin-top: 20px;
+}
+div#interface section#corpo  p {
+	font-family: Calibri;
+	text-align: justify;
+	text-indent: 50px;
+	margin: 5px 20px 5px 20px;
+}
+div#interface section#corpo  h3 {
+	font-family: Calibri;
+	margin-left: 20px;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+/*Configurações do cabeçalho do site*/
+header#cabecalho {
+	background: url("piracicabaimg/imgpira.jpg") center no-repeat;
+	background-size: 900px 300px;
+	border-radius: 6px 6px 6px;
+	padding: 0px;
+}
+ header#cabecalho hgroup#titulos {
+ 	margin: 0px;
+ 	padding: 60px 20px 10px 20px;
+	font-family: Calibri;
+	background-color: rgba(255,255,255,.3);
+	color: rgba(0,0,0,1);
+	opacity: 1;
+}
+/*Configurações das fotos*/
+section#corpo ul#amostrafotos {
+	position: absolute;
+	top: 980px;
+	list-style: none;
+    margin: 5px 340px 5px 335px;
+}
+section#corpo ul#amostrafotos li {
+	display: inline-block;
+}
+section#corpo img#foto {
+	width: 25%;
+	height: 25%;
+	margin: 5px 5px 5px 20px;
+	background-color: rgba(0,0,0,.5);
+	box-shadow: 0px 0px 1px;
+	padding: 20px 315px 40px 310px;
+}
+footer#rodape {
+	margin: 50px 5px 50px 5px;
+}
+footer#rodape p {
+	font-family: Calibri;
+	text-align: center;
+	margin: 10px 5px 10px 5px;
+}

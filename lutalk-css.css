@@ -1,0 +1,85 @@
+@charset="UTF-8";
+section#corpo4 {
+	box-shadow: 0px 0px 2px;
+	border-radius: 6px 6px 6px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+section#corpo4 h3 {
+	font-family: Calibri;
+	margin-left: 20px;
+	margin-top: 10px;
+	padding-top: 20px;
+}
+section#corpo4 p{
+	font-family: Calibri;
+	margin-left: 20px;
+}
+form#contatos {
+	position: relative;
+	border-radius: 3px;
+	width: 300px;
+	margin: 10px 0px 3px 290px;
+	padding-bottom: 10px;
+	box-shadow: 0px 1px 1px;
+}
+form#contatos p{
+	font-family: Calibri;
+}
+form#contatos legend {
+	font-family: Calibri;
+	font-size: 20px;
+	font-weight: bold;
+}
+form#contatos fieldset {
+	border: none;
+	/*box-shadow: 0px 0px 2px;*/
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+form#contatos input {
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 2px;
+}
+form#contatos textarea {
+	border-radius: 2px;
+	border: 1px solid rgba(0,0,0,.1);
+}
+form#contatos button#idenviar {
+	font-family: Calibri;
+	font-size: 15px;
+	background-color: rgba(181,230,29,1);
+	border: 1px solid rgba(181,230,29,1);
+	padding: 5px 10px 5px 10px;
+	border-radius: 2px;
+	margin: 5px 5px 5px 120px;
+}
+form#contatos input#idvalue {
+	border: 1px solid rgba(255,255,255,1);
+}
+form#contatos button#idenviar:hover {
+	background-color: rgba(195,195,195,.7);
+	border: 1px solid rgba(195,195,195,.7);
+}
+section#corpo4 p a#f{
+	text-decoration: none;
+	font-family: Calibri;
+	font-weight: bolder;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+	background-color: rgba(0,162,232,1);
+	border: 1px solid rgba(0,162,232,1);
+	padding: 5px 10px 5px 7px;
+	-webkit-border-radius: 3px;
+}
+section#corpo4 p a#gram{
+	text-decoration: none;
+	font-family: Calibri;
+	font-weight: bold;
+	color: rgba(0,0,0,1);
+	border: 1px solid rgba(0,0,0,1);
+	padding: 5px 7px 5px 7px;
+	font-size: 20px;
+	border-radius: 3px;
+}
+
