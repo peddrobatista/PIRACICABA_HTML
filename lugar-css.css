@@ -1,101 +1,173 @@
-@charset="UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /*	Configurações da página (FOLHA REFERENCIAL para TODAS as outras páginas)
 	Configurações da folha de estilo do site
 	Configurações do menu do site
 	Criado por João Pedro 11/04/2019	
+	Atualizado em 02/02/2022
 */
-nav#menu ul {
-	list-style: none;
-	position: absolute;
-	right:250px;
-	top:0px;
-}
-nav#menu li{
-	display: inline-block;
-	margin-right: 9px;
-	margin-left: 2px;
-	padding: 2px 10px 2px 10px;
-	background-color: rgba(181,230,29,.5);
-	border-radius: 6px 6px 6px;
-}
-nav#menu li:hover {
-	transition: 0.4s;
-	background-color: rgba(181,230,29,1);
-}	
-nav#menu li a {
-	font-family: Calibri;
+/* Configurações gerais*/
+*
+{
+    padding: 0;
+    margin: 0;
 	text-decoration: none;
-	color: black;
+	font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
 }
-/*Configurações do corpo do site*/
-body{
-	background-color: rgba(255,255,255,1);
+html {
+	background: url(piracicabaimg/imagem-fundo.jpg) no-repeat center fixed;
+	background-size: cover;
 }
-div#interface {
-	background-color: rgba(255,255,255,0);
-	padding: 0px 0px 0px 0px;
-    width: 900px;
-    margin-top: -20px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: -20px;
+.interface::after {
+	content: "";
+	clear: both;
+	display: table;
 }
-section#corpo {
-	background-color: rgba(255,255,255,1);
-	box-shadow: 0px 0px 2px rgba(0,0,0,1);
-	border-radius: 6px 6px 6px;
-	margin-top: 20px;
+[class*="col-"] {
+	float: left;
+	padding: 15px;
 }
-div#interface section#corpo  p {
-	font-family: Calibri;
-	text-align: justify;
-	text-indent: 50px;
-	margin: 5px 20px 5px 20px;
+/* Configurações do menu */
+#menu {
+	position: fixed;
+	top: 0;
+	list-style: none;
+	background: rgba(139, 139, 139, 0.089);
+	backdrop-filter: blur(15px);
+	width: 100%;
+	height: 63px;
+	z-index: 10;
 }
-div#interface section#corpo  h3 {
-	font-family: Calibri;
-	margin-left: 20px;
-	margin-top: 10px;
-	padding-top: 10px;
+#menu ul {
+	float: right;
+	margin-right: 20px;
+}
+#menu ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+	padding: 0;
+}
+#menu ul li a {
+    color: white;
+	background: rgba(73, 73, 73, 0.349);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+	transition: all 0.5s;
+}
+#menu ul li a:hover {
+	background: rgba(17, 245, 93, 0.568);
 }
 /*Configurações do cabeçalho do site*/
-header#cabecalho {
-	background: url("piracicabaimg/imgpira.jpg") center no-repeat;
-	background-size: 900px 300px;
-	border-radius: 6px 6px 6px;
-	padding: 0px;
+.cabecalho {
+	margin-top: 63px;
+	padding: 50px 15px; /* cima/baixo, direito/esquerdo */
+	width: 100%;
 }
- header#cabecalho hgroup#titulos {
- 	margin: 0px;
- 	padding: 60px 20px 10px 20px;
-	font-family: Calibri;
-	background-color: rgba(255,255,255,.3);
-	color: rgba(0,0,0,1);
-	opacity: 1;
+.titulos {
+	color: rgba(255, 255, 255, 0.774);
+	background: rgba(73, 73, 73, 0.267);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 15px;
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+	font-size: 24px;
+}
+/*Configurações do corpo do site*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.secao {
+	background: rgba(73, 73, 73, 0.267);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 15px;
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+}
+.secao h1 {
+	font-size: 28px;
+	margin: 10px 0;
+	color: rgba(255, 255, 255, 0.774);
+}
+.secao p {
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.774);
+}
+/* Configurações do rodapé */
+.rodape {
+	color: rgba(255, 255, 255, 0.774);
+	padding: 15px 0;
+	text-align: center;
+	line-height: 1.5;
+}
+.rodape a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.774);
 }
 /*Configurações das fotos*/
-section#corpo ul#amostrafotos {
-	position: absolute;
-	top: 980px;
+.galeria {
+	background: rgba(218, 217, 217, 0.062);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 5px rgb(61, 61, 61);
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	margin: 15px;
+	border-radius: 15px;
+	transition: all 0.5s;
+}
+img:hover {
+	transform: scale(1.1);
+}
+.amostrafotos {
 	list-style: none;
-    margin: 5px 340px 5px 335px;
-}
-section#corpo ul#amostrafotos li {
 	display: inline-block;
+	margin: 15px 0;
+	padding: 15px;
+	background: rgba(255, 255, 255, 0.397);
+	border-radius: 5px;
+    box-shadow: 0 0 5px rgb(61, 61, 61);
 }
-section#corpo img#foto {
-	width: 25%;
-	height: 25%;
-	margin: 5px 5px 5px 20px;
-	background-color: rgba(0,0,0,.5);
-	box-shadow: 0px 0px 1px;
-	padding: 20px 315px 40px 310px;
+.amostrafotos li {
+	float: left;
+	cursor: pointer;
 }
-footer#rodape {
-	margin: 50px 5px 50px 5px;
+.amostrafotos li label {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.568);
+	box-shadow: 0 0 3px rgba(73, 73, 73, 0.836);
+	border-radius: 5px;
+	padding: 8px 16px;
+	margin: 1px;
+	font-size: 15px;
 }
-footer#rodape p {
-	font-family: Calibri;
-	text-align: center;
-	margin: 10px 5px 10px 5px;
+.amostrafotos li label:hover {
+	background: rgba(78, 240, 78, 0.986);
+}
+.amostrafotos li input {
+	display: none;
 }
